@@ -49,6 +49,7 @@ class Results extends React.Component {
     const endDT = Number.isInteger(endTime) ? endTime : new Date(endTime).getTime();
     const startDT = Number.isInteger(startTime) ? startTime : new Date(startTime).getTime();
     const localID = `${pc}_${env}_${startDT}`;
+    const resultsURL = ``;
 
     // Fetch results data -------------------------
     axios.get(resultsURL).then(res => {
