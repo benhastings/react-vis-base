@@ -2,21 +2,28 @@
   text-align: center;
 }
 
-.App-logo {
+.React-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 5vmin;
   pointer-events: none;
 }
 
+.App-logo {
+  height: 5vmin;
+  margin-left: 25px;
+}
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
+  background-color: #eeeeee;
   min-height: 10vh;
   display: flex;
   flex-direction: row;
   align-items: center;
+  /* justify-content: center; */
   justify-content: space-between;
   font-size: calc(10px + 2vmin);
-  color: white;
+  /* color: white; */
+  color: cadetblue;
 }
 
 .App-link {
