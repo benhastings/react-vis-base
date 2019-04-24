@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
 
+import TabContent from './TabContent';
+
 const propTypes = {
   match: PropTypes.shape({
     url: PropTypes.string.isRequired,
@@ -19,9 +21,6 @@ const propTypes = {
 
 // const defaultProps = {
 //   pc: 'Hello World',
-//   env: 'Default env',
-//   startTime: '2019-04-30 10:30',
-//   endTime: '2019-04-30 12:30',
 // };
 
 class Results extends React.Component {
@@ -39,15 +38,17 @@ class Results extends React.Component {
         params: { pc, env, startTime, endTime },
       },
     } = this.props;
-    // console.log('Results::match', match);
+
     return (
       <div>
         <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
           <Tab eventKey="home" title="Home">
             Tab 1 - {pc} {env} {startTime} {endTime} \n\n
+            <TabContent name="UNO TAB1 UNO" />
           </Tab>
           <Tab eventKey="profile" title="Profile">
             Tab 2 - {pc} {env} {startTime} {endTime}
+            <TabContent name="DUO TAB2 DUO" />
           </Tab>
         </Tabs>
       </div>
